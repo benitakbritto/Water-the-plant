@@ -88,7 +88,7 @@ bool dry(int pin)
   * Reads the value from an analog pin. The return value is
   * between 0 and 1023
   */
-  if(analogRead(pin) < 800)
+  if(analogRead(pin) < 600)
   {
     return true;
   }
@@ -98,7 +98,7 @@ bool dry(int pin)
 
 bool borderline(int pin)
 {
-  if(analogRead(pin) == 800)
+  if(analogRead(pin) == 600)
   {
     return true;
   }
